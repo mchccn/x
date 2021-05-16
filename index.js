@@ -1,3 +1,5 @@
+/** @cursorsdottsx */
+
 /** Notes */
 /**
  * Extended native classes need to have the `this` context in methods equivalent to an instance of themselves, which is done by storing the old methods in an object for later invokation.
@@ -6,14 +8,10 @@
  * 
  * Testing on any browser that is not using V8 is not advised since results and output have been proven to be drastically different.
  * 
- * When publishing, transform the function call to hoist the script into an IIFE for closure and simple API usage.
- * 
  * Strive to mimic native behaviour as close as possible while still provided useless but entertaining extensions.
  */
 
-useExtensions();
-
-function useExtensions() {
+(function () {
 	"use strict";
 
     try {
@@ -79,6 +77,16 @@ function useExtensions() {
 
 			return fn;
 		}).bind(function nativeToString() {});
+
+		globalThis.x.defineMethod = (function(prototype, method, fn) {
+            if (typeof prototype === "undefined") this.error("No prototype provided to define casts.");
+
+            if (typeof method === "undefined") this.error("No method name provided.");
+
+            if (typeof fn === "undefined") this.error("No method implementation provided.");
+
+			// 
+        }).bind(function defineMethod() {});
 
 		Object.freeze(globalThis.x);
 		
@@ -298,7 +306,9 @@ function useExtensions() {
         globalThis.Array = globalThis.x.nativeToString(Object.setPrototypeOf(function Array(...args) {
 			if (!new.target) return new Array(...args);
 
-			return new Proxy(new (class Array extends NATIVE_ARRAY {})(...args), {
+			return new Proxy(new (class Array extends NATIVE_ARRAY {
+				
+			})(...args), {
 				get(...args) {
 					if (
 						typeof args[1] === "string" &&
@@ -386,6 +396,8 @@ function useExtensions() {
             globalThis.Uint32Array,
             globalThis.Float32Array,
             globalThis.Float64Array,
+			globalThis.BigInt64Array,
+			globalThis.BigUint64Array,
         ]);
 
         return console.log(`[Extensions] Initialization complete.`);
@@ -394,5 +406,4 @@ function useExtensions() {
 
         return console.error(`[Extensions] Initialization error:`, error);
     }
-}
-
+})();
