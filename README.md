@@ -1,3 +1,33 @@
+| [a](https://www.npmjs.com/package/@cursorsdottsx/a)
+| [b](https://www.npmjs.com/package/@cursorsdottsx/b)
+| [c](https://www.npmjs.com/package/@cursorsdottsx/c)
+| [d](https://www.npmjs.com/package/@cursorsdottsx/d)
+| [e](https://www.npmjs.com/package/@cursorsdottsx/e)
+| [f](https://www.npmjs.com/package/@cursorsdottsx/f)
+| [g](https://www.npmjs.com/package/@cursorsdottsx/g)
+| [h](https://www.npmjs.com/package/@cursorsdottsx/h)
+| [i](https://www.npmjs.com/package/@cursorsdottsx/i)
+| [j](https://www.npmjs.com/package/@cursorsdottsx/j)
+| [k](https://www.npmjs.com/package/@cursorsdottsx/k)
+| [l](https://www.npmjs.com/package/@cursorsdottsx/l)
+| [m](https://www.npmjs.com/package/@cursorsdottsx/m)
+| [n](https://www.npmjs.com/package/@cursorsdottsx/n)
+| [o](https://www.npmjs.com/package/@cursorsdottsx/o)
+| [p](https://www.npmjs.com/package/@cursorsdottsx/p)
+| [q](https://www.npmjs.com/package/@cursorsdottsx/q)
+| [r](https://www.npmjs.com/package/@cursorsdottsx/r)
+| [s](https://www.npmjs.com/package/@cursorsdottsx/s)
+| [t](https://www.npmjs.com/package/@cursorsdottsx/t)
+| [u](https://www.npmjs.com/package/@cursorsdottsx/u)
+| [v](https://www.npmjs.com/package/@cursorsdottsx/v)
+| [w](https://www.npmjs.com/package/@cursorsdottsx/w)
+| **x**
+| [y](https://www.npmjs.com/package/@cursorsdottsx/y)
+| [z](https://www.npmjs.com/package/@cursorsdottsx/z)
+|
+
+**X is for eXtensions**
+
 # @cursorsdottsx/x
 
 ### Welcome to the most cursed JavaScript library's homepage.
@@ -43,4 +73,6 @@ If you installed it with `git clone`, put the path to the `index.js` file instea
 
 ### How to utilize this cursed garbage
 
-**perhaps**
+*(softly) Don't.*
+
+[npm abc's homepage](https://codepen.io/cursorsdottsx/full/KKWNRaY)
